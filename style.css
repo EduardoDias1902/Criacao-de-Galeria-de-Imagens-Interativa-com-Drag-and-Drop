@@ -41,7 +41,6 @@ h2 {
   background-color: #3b3b52;
 }
 
-/* === GRADE DE IMAGENS: 3 POR LINHA === */
 .imagens {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
