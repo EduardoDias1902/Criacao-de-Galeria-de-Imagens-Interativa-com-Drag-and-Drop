@@ -1,65 +1,54 @@
-const galeria = document.getElementById('galeria');
-const favoritos = document.getElementById('favoritos');
-const contador = document.getElementById('contador');
 const imagens = document.querySelectorAll('.draggable');
+const dropzones = document.querySelectorAll('.dropzone');
 
-// Atualiza o contador de favoritos
-function atualizarContador() {
-  const total = favoritos.querySelectorAll('img').length;
-  contador.textContent = `${total} personagem${total !== 1 ? 's' : ''}`;
-}
-
-// Eventos de arrastar das imagens
 imagens.forEach(img => {
   img.addEventListener('dragstart', e => {
     e.dataTransfer.setData('text/plain', e.target.src);
   });
 });
 
-// Quando imagem é arrastada sobre a área de favoritos
-favoritos.addEventListener('dragover', e => {
-  e.preventDefault();
-  favoritos.classList.add('highlight');
-});
+// Atualiza contador de cada zona
+function atualizarContador(zona) {
+  const contador = zona.id === 'favoritos'
+    ? document.getElementById('contador-favoritos')
+    : document.getElementById('contador-odiados');
 
-// Quando sai da área de favoritos
-favoritos.addEventListener('dragleave', () => {
-  favoritos.classList.remove('highlight');
-});
+  const total = zona.querySelectorAll('img').length;
+  contador.textContent = `${total} personagem${total !== 1 ? 's' : ''}`;
+}
 
-// Soltar imagem nos favoritos
-favoritos.addEventListener('drop', e => {
-  e.preventDefault();
-  favoritos.classList.remove('highlight');
+// Configura todas as dropzones (favoritos e odiados)
+dropzones.forEach(zona => {
+  zona.addEventListener('dragover', e => {
+    e.preventDefault();
+    zona.classList.add('highlight');
+  });
 
-  const src = e.dataTransfer.getData('text/plain');
+  zona.addEventListener('dragleave', () => {
+    zona.classList.remove('highlight');
+  });
 
-  // Verifica se já existe a imagem
-  if (![...favoritos.querySelectorAll('img')].some(i => i.src === src)) {
-    const novaImg = document.createElement('img');
-    novaImg.src = src;
-    novaImg.draggable = true;
-    novaImg.classList.add('draggable');
+  zona.addEventListener('drop', e => {
+    e.preventDefault();
+    zona.classList.remove('highlight');
 
-    // Clicar remove a imagem dos favoritos
-    novaImg.addEventListener('click', () => {
-      novaImg.remove();
-      atualizarContador();
-    });
+    const src = e.dataTransfer.getData('text/plain');
 
-    favoritos.appendChild(novaImg);
-    atualizarContador();
-  }
-});
+    // Evita duplicadas
+    if (![...zona.querySelectorAll('img')].some(i => i.src === src)) {
+      const novaImg = document.createElement('img');
+      novaImg.src = src;
+      novaImg.draggable = true;
+      novaImg.classList.add('draggable');
 
-// Permitir arrastar de volta para galeria
-galeria.addEventListener('dragover', e => e.preventDefault());
-galeria.addEventListener('drop', e => {
-  e.preventDefault();
-  const src = e.dataTransfer.getData('text/plain');
-  const img = favoritos.querySelector(`img[src="${src}"]`);
-  if (img) {
-    img.remove();
-    atualizarContador();
-  }
+      // Clique remove imagem
+      novaImg.addEventListener('click', () => {
+        novaImg.remove();
+        atualizarContador(zona);
+      });
+
+      zona.appendChild(novaImg);
+      atualizarContador(zona);
+    }
+  });
 });

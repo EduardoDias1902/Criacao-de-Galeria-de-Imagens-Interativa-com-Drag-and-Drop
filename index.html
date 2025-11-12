@@ -8,36 +8,55 @@
 </head>
 <body>
 
-  <div class="container">
-    <h2>Personagens Maneiros</h2>
-    <div class="galeria" id="galeria">
-      <div class="imagens">
-        <img src="Imagens/dante.jpg" alt="Herói 1" draggable="true" class="draggable">
-        <img src="Imagens/vergil.jpeg" alt="Herói 2" draggable="true" class="draggable">
-        <img src="Imagens/cage.jpg" alt="Herói 3" draggable="true" class="draggable">
-        <img src="Imagens/charlie.jpg" alt="Herói 4" draggable="true" class="draggable">
-        <img src="Imagens/jimmy.webp" alt="Herói 5" draggable="true" class="draggable">
-        <img src="Imagens/sett.jpg" alt="Herói 6" draggable="true" class="draggable">
-        <img src="Imagens/mcqueen.jpg" alt="Herói 7" draggable="true" class="draggable">
-        <img src="Imagens/cj.png" alt="Herói 8" draggable="true" class="draggable">
-        <img src="Imagens/josuke.jpg" alt="Herói 8" draggable="true" class="draggable">
-        <img src="Imagens/kaiju.jpg" alt="Herói 8" draggable="true" class="draggable">
-        <img src="Imagens/deadpool.jpg" alt="Herói 8" draggable="true" class="draggable">
-        <img src="Imagens/cavaleiro.jpg" alt="Herói 8" draggable="true" class="draggable">
-        <img src="Imagens/godzilla.jpg" alt="Herói 8" draggable="true" class="draggable">
-        <img src="Imagens/max.jpg" alt="Herói 8" draggable="true" class="draggable">
-        <img src="Imagens/sonic.jpg" alt="Herói 8" draggable="true" class="draggable">
-      
+  <div class="main-container">
+    <!-- Coluna 1: Galeria -->
+    <div class="container">
+      <h2>Caras Maneiros 😎</h2>
+      <div class="galeria" id="galeria">
+        <div class="imagens">
+          <img src="Imagens/dante.jpg" alt="Herói 1" draggable="true" class="draggable">
+          <img src="Imagens/vergil.jpeg" alt="Herói 2" draggable="true" class="draggable">
+          <img src="Imagens/cage.jpg" alt="Herói 3" draggable="true" class="draggable">
+          <img src="Imagens/charlie.jpg" alt="Herói 4" draggable="true" class="draggable">
+          <img src="Imagens/jimmy.webp" alt="Herói 5" draggable="true" class="draggable">
+          <img src="Imagens/sett.jpg" alt="Herói 6" draggable="true" class="draggable">
+          <img src="Imagens/mcqueen.jpg" alt="Herói 7" draggable="true" class="draggable">
+          <img src="Imagens/cj.png" alt="Herói 8" draggable="true" class="draggable">
+          <img src="Imagens/josuke.jpg" alt="Herói 9" draggable="true" class="draggable">
+          <img src="Imagens/kaiju.jpg" alt="Herói 10" draggable="true" class="draggable">
+          <img src="Imagens/deadpool.jpg" alt="Herói 11" draggable="true" class="draggable">
+          <img src="Imagens/cavaleiro.jpg" alt="Herói 12" draggable="true" class="draggable">
+          <img src="Imagens/godzilla.jpg" alt="Herói 13" draggable="true" class="draggable">
+          <img src="Imagens/max.jpg" alt="Herói 14" draggable="true" class="draggable">
+          <img src="Imagens/sonic.jpg" alt="Herói 15" draggable="true" class="draggable">
+          <img src="Imagens/chester.jpg" alt="Herói 16" draggable="true" class="draggable">
+          <img src="Imagens/geralt.jpg" alt="Herói 17" draggable="true" class="draggable">
+          <img src="Imagens/kratos.jpg" alt="Herói 18" draggable="true" class="draggable">
+          <img src="Imagens/carlos.jpg" alt="Herói 18" draggable="true" class="draggable">
+          <img src="Imagens/doom.jpg" alt="Herói 18" draggable="true" class="draggable">
+         
+        </div>
       </div>
     </div>
-  </div>
 
-  <div class="container">
-    <h2>Favoritos ❤️</h2>
-    <div class="favoritos dropzone" id="favoritos">
-      <p class="mensagem">Arraste aqui seus favoritos!</p>
+    <!-- Coluna 2: Favoritos e Odiados -->
+    <div class="lado-direito">
+      <div class="container">
+        <h2>Favoritos 🤙</h2>
+        <div class="dropzone" id="favoritos">
+          <p class="mensagem">Arraste aqui seus favoritos!</p>
+        </div>
+        <div class="contador" id="contador-favoritos">0 personagens</div>
+      </div>
+
+      <div class="container">
+        <h2>Odiados 👿</h2>
+        <div class="dropzone" id="odiados">
+          <p class="mensagem">Arraste aqui seus odiados!</p>
+        </div>
+        <div class="contador" id="contador-odiados">0 personagens</div>
+      </div>
     </div>
-    <div class="contador" id="contador">0 personagens</div>
   </div>
 
   <script src="script.js"></script>
