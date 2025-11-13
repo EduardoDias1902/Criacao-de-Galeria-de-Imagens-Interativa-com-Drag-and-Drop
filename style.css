@@ -35,7 +35,6 @@ h2 {
   text-shadow: 1px 1px 5px #000;
 }
 
-/* 4 imagens por linha */
 .galeria, .dropzone {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
@@ -47,7 +46,7 @@ h2 {
   border-radius: 15px;
   padding: 20px;
   width: 600px;        /* aumentei um pouco para caber 4 imagens confortavelmente */
-  min-height: 350px;
+  min-height: 400px;
   transition: all 0.3s ease;
 }
 
@@ -56,7 +55,6 @@ h2 {
   background-color: #3b3b52;
 }
 
-/* também com 4 colunas na galeria principal */
 .imagens {
   display: grid;
   grid-template-columns: repeat(4, 1fr);
