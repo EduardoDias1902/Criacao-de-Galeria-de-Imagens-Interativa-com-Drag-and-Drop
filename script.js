@@ -7,7 +7,6 @@ imagens.forEach(img => {
   });
 });
 
-// Atualiza contador de cada zona
 function atualizarContador(zona) {
   const contador = zona.id === 'favoritos'
     ? document.getElementById('contador-favoritos')
@@ -17,7 +16,6 @@ function atualizarContador(zona) {
   contador.textContent = `${total} personagem${total !== 1 ? 's' : ''}`;
 }
 
-// Configura todas as dropzones (favoritos e odiados)
 dropzones.forEach(zona => {
   zona.addEventListener('dragover', e => {
     e.preventDefault();
@@ -34,14 +32,12 @@ dropzones.forEach(zona => {
 
     const src = e.dataTransfer.getData('text/plain');
 
-    // Evita duplicadas
     if (![...zona.querySelectorAll('img')].some(i => i.src === src)) {
       const novaImg = document.createElement('img');
       novaImg.src = src;
       novaImg.draggable = true;
       novaImg.classList.add('draggable');
 
-      // Clique remove imagem
       novaImg.addEventListener('click', () => {
         novaImg.remove();
         atualizarContador(zona);
