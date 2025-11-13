@@ -23,10 +23,23 @@ body {
 
 .container {
   display: flex;
+  flex-direction: row;
+  gap: 10rem;
+}
+
+.favorite,
+.hated {
+  display: flex;
   flex-direction: column;
   align-items: center;
-  gap: 20px;
 }
+
+.personagens {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 
 h2 {
   margin: 10px 0;
@@ -35,7 +48,8 @@ h2 {
   text-shadow: 1px 1px 5px #000;
 }
 
-.galeria, .dropzone {
+.galeria,
+.dropzone {
   display: grid;
   grid-template-columns: repeat(5, 1fr);
   gap: 15px;
@@ -45,8 +59,8 @@ h2 {
   border: 2px solid #444;
   border-radius: 15px;
   padding: 20px;
-  width: 700px;        
-  min-height: 400px;
+  width: 700px;
+  min-height: 580px;
   transition: all 0.3s ease;
 }
 
@@ -65,7 +79,7 @@ h2 {
 }
 
 img {
-  width: 115px; 
+  width: 115px;
   border-radius: 10px;
   cursor: grab;
   border: 2px solid transparent;
@@ -84,8 +98,15 @@ img:hover {
 }
 
 .mensagem {
-  grid-column: span 5; 
+  grid-column: span 5;
   font-size: 13px;
   color: #aaa;
   text-align: center;
+}
+
+.nome {
+  display: flex;
+  justify-content: center;
+  font-family: 'Arial Black', sans-serif;
+  color: #ffcc00;
 }

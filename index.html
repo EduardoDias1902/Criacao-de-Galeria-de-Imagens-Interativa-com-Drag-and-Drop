@@ -1,88 +1,293 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Galeria de Personagens Maneiros</title>
   <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
   <div class="main-container">
-    <!-- Coluna 1: Galeria -->
     <div class="container">
-      <h2>Caras Maneiros 😎</h2>
-      <div class="galeria" id="galeria">
-        <div class="imagens">
-          <img src="Imagens/dante.jpg" alt="Dante(dmc)" draggable="true" class="draggable">
-          <img src="Imagens/vergil.jpeg" alt="Vergil(dmc)" draggable="true" class="draggable">
-          <img src="Imagens/cage.jpg" alt="JohnnyCage(mk)" draggable="true" class="draggable">
-          <img src="Imagens/charlie.jpg" alt="Charlie(sf)" draggable="true" class="draggable">
-          <img src="Imagens/jimmy.webp" alt="Jimmy(bully)" draggable="true" class="draggable">
-          <img src="Imagens/sett.jpg" alt="Sett(lol)" draggable="true" class="draggable">
-          <img src="Imagens/mcqueen.jpg" alt="McQueen(cars)" draggable="true" class="draggable">
-          <img src="Imagens/cj.png" alt="CJ(GTA)" draggable="true" class="draggable">
-          <img src="Imagens/josuke.jpg" alt="Josuke(jojo)" draggable="true" class="draggable">
-          <img src="Imagens/kaiju.jpg" alt="KaijuN°8(kaijuN°8)" draggable="true" class="draggable">
-          <img src="Imagens/deadpool.jpg" alt="Deadpool(marvel)" draggable="true" class="draggable">
-          <img src="Imagens/cavaleiro.jpg" alt="MoonKnight(marvel)" draggable="true" class="draggable">
-          <img src="Imagens/godzilla.jpg" alt="Godzilla(godzilla)" draggable="true" class="draggable">
-          <img src="Imagens/max.jpg" alt="MaxVerstappen(f1)" draggable="true" class="draggable">
-          <img src="Imagens/sonic.jpg" alt="Sonic(sonic)" draggable="true" class="draggable">
-          <img src="Imagens/chester.jpg" alt="Chester(lp)" draggable="true" class="draggable">
-          <img src="Imagens/geralt.jpg" alt="Geralt(tw)" draggable="true" class="draggable">
-          <img src="Imagens/kratos.jpg" alt="Kratos(gow)" draggable="true" class="draggable">
-          <img src="Imagens/carlos.jpg" alt="CARLOS" draggable="true" class="draggable">
-          <img src="Imagens/doom.jpg" alt="DoomSlayer(doom)" draggable="true" class="draggable">
-          <img src="Imagens/spider.jpg" alt="SpiderMan(marvel)" draggable="true" class="draggable">
-          <img src="Imagens/raiden.webp" alt="Raiden(mgrr)" draggable="true" class="draggable">
-          <img src="Imagens/samuel.jpg" alt="JetStreamSam(mgrr)" draggable="true" class="draggable">
-          <img src="Imagens/Freddy.webp" alt="Freddy(fnaf)" draggable="true" class="draggable">
-          <img src="Imagens/shadow.jpg" alt="Shadow(sonic)" draggable="true" class="draggable">
-          <img src="Imagens/ghostface.jpg" alt="Ghostface(Scream)" draggable="true" class="draggable">
-          <img src="Imagens/steve.jpg" alt="Steve(mine)" draggable="true" class="draggable">
-          <img src="Imagens/scorpion.jpg" alt="Scorpion(mk)" draggable="true" class="draggable">
-          <img src="Imagens/dio.png" alt="Dio(jojo)" draggable="true" class="draggable">
-          <img src="Imagens/morte.webp" alt="Death(pib)" draggable="true" class="draggable">
-          <img src="Imagens/tai lung.png" alt="TaiLung(kfp)" draggable="true" class="draggable">
-          <img src="Imagens/megamind.jpg" alt="Megamind(megamind)" draggable="true" class="draggable">
-          <img src="Imagens/venom.jpg" alt="Venom(marvel)" draggable="true" class="draggable">
-          <img src="Imagens/jonesy.jpg" alt="Jonesy(fortnite)" draggable="true" class="draggable">
-          <img src="Imagens/diego.jpg" alt="Diego(ia)" draggable="true" class="draggable">
-          <img src="Imagens/mark.jpg" alt="MarkGrayson(invincible)" draggable="true" class="draggable">        
-          <img src="Imagens/URF.jpg" alt="FocaURF(lol)" draggable="true" class="draggable">        
-          <img src="Imagens/MasterChief.jpg" alt="MasterChief(halo)" draggable="true" class="draggable">        
-          <img src="Imagens/leon.jpg" alt="Leon(re)" draggable="true" class="draggable">        
-          <img src="Imagens/Nolan.jpg" alt="Omni-man(invincible)" draggable="true" class="draggable">        
-          <img src="Imagens/ironMan.jpg" alt="IronMan(marvel)" draggable="true" class="draggable">        
-          <img src="Imagens/pussInBoots.jpg" alt="PussInBoots(pib)" draggable="true" class="draggable">        
-          <img src="Imagens/FredDurst.jpg" alt="FredDurst(lb)" draggable="true" class="draggable">        
-          <img src="Imagens/ozzyOsbourne.jpg" alt="OzzyOsbourne(bs)" draggable="true" class="draggable">        
-          <img src="Imagens/OliverSykes.jpg" alt="OliverSykes(bmth)" draggable="true" class="draggable">        
- 
+      <div class="personagens">
+        <h2>Caras Maneiros 😎</h2>
+        <div class="galeria" id="galeria">
+          <div class="imagens">
+            <div class="personagem">
+              <img src="Imagens/dante.jpg" alt="Dante(dmc)" draggable="true" class="draggable">
+              <p class="nome">Dante</p>
+            </div>
+
+            <div class="personagem">
+              <img src="Imagens/vergil.jpeg" alt="Vergil(dmc)" draggable="true" class="draggable">
+              <p class="nome">Vergil</p>
+            </div>
+
+            <div class="personagem">
+              <img src="Imagens/cage.jpg" alt="JohnnyCage(mk)" draggable="true" class="draggable">
+              <p class="nome">Johnny Cage</p>
+            </div>
+
+            <div class="personagem">
+              <img src="Imagens/charlie.jpg" alt="Charlie(sf)" draggable="true" class="draggable">
+              <p class="nome">Charlie</p>
+            </div>
+            <div class="personagem">
+              <img src="Imagens/jimmy.webp" alt="Jimmy(bully)" draggable="true" class="draggable">
+              <p class="nome">Jimmy</p>
+            </div>
+
+            <div class="personagem">
+              <img src="Imagens/sett.jpg" alt="Sett(lol)" draggable="true" class="draggable">
+              <p class="nome">Sett</p>
+            </div>
+
+            <div class="personagem">
+              <img src="Imagens/mcqueen.jpg" alt="McQueen(cars)" draggable="true" class="draggable">
+              <p class="nome">McQueen</p>
+            </div>
+
+            <div class="personagem">
+              <img src="Imagens/cj.png" alt="CJ(GTA)" draggable="true" class="draggable">
+              <p class="nome">CJ</p>
+            </div>
+
+            <div class="personagem">
+              <img src="Imagens/josuke.jpg" alt="Josuke(jojo)" draggable="true" class="draggable">
+              <p class="nome">Josuke</p>
+            </div>
+
+            <div class="personagem">
+              <img src="Imagens/kaiju.jpg" alt="KaijuN°8(kaijuN°8)" draggable="true" class="draggable">
+              <p class="nome">Kaiju N°8</p>
+            </div>
+
+            <div class="personagem">
+              <img src="Imagens/deadpool.jpg" alt="Deadpool(marvel)" draggable="true" class="draggable">
+              <p class="nome">Deadpool</p>
+            </div>
+
+            <div class="personagem">
+              <img src="Imagens/cavaleiro.jpg" alt="MoonKnight(marvel)" draggable="true" class="draggable">
+              <p class="nome">Moon Knight</p>
+            </div>
+
+            <div class="personagem">
+              <img src="Imagens/godzilla.jpg" alt="Godzilla(godzilla)" draggable="true" class="draggable">
+              <p class="nome">Godzilla</p>
+            </div>
+
+            <div class="personagem">
+              <img src="Imagens/max.jpg" alt="MaxVerstappen(f1)" draggable="true" class="draggable">
+              <p class="nome">Verstappen</p>
+            </div>
+
+            <div class="personagem">
+              <img src="Imagens/sonic.jpg" alt="Sonic(sonic)" draggable="true" class="draggable">
+              <p class="nome">Sonic</p>
+            </div>
+
+            <div class="personagem">
+              <img src="Imagens/chester.jpg" alt="Chester(lp)" draggable="true" class="draggable">
+              <p class="nome">Chester</p>
+            </div>
+
+            <div class="personagem">
+              <img src="Imagens/geralt.jpg" alt="Geralt(tw)" draggable="true" class="draggable">
+              <p class="nome">Geralt</p>
+            </div>
+
+            <div class="personagem">
+              <img src="Imagens/kratos.jpg" alt="Kratos(gow)" draggable="true" class="draggable">
+              <p class="nome">Kratos</p>
+            </div>
+
+            <div class="personagem">
+              <img src="Imagens/carlos.jpg" alt="CARLOS" draggable="true" class="draggable">
+              <p class="nome">Carlos</p>
+            </div>
+
+            <div class="personagem">
+              <img src="Imagens/doom.jpg" alt="DoomSlayer(doom)" draggable="true" class="draggable">
+              <p class="nome">Doom Slayer</p>
+            </div>
+
+            <div class="personagem">
+              <img src="Imagens/spider.jpg" alt="SpiderMan(marvel)" draggable="true" class="draggable">
+              <p class="nome">Spider-Man</p>
+            </div>
+
+            <div class="personagem">
+              <img src="Imagens/raiden.webp" alt="Raiden(mgrr)" draggable="true" class="draggable">
+              <p class="nome">Raiden</p>
+            </div>
+
+            <div class="personagem">
+              <img src="Imagens/samuel.jpg" alt="JetStreamSam(mgrr)" draggable="true" class="draggable">
+              <p class="nome">S. Rodrigues</p>
+            </div>
+
+            <div class="personagem">
+              <img src="Imagens/Freddy.webp" alt="Freddy(fnaf)" draggable="true" class="draggable">
+              <p class="nome">Freddy</p>
+            </div>
+
+            <div class="personagem">
+              <img src="Imagens/shadow.jpg" alt="Shadow(sonic)" draggable="true" class="draggable">
+              <p class="nome">Shadow</p>
+            </div>
+
+            <div class="personagem">
+              <img src="Imagens/ghostface.jpg" alt="Ghostface(Scream)" draggable="true" class="draggable">
+              <p class="nome">Ghostface</p>
+            </div>
+
+            <div class="personagem">
+              <img src="Imagens/steve.jpg" alt="Steve(mine)" draggable="true" class="draggable">
+              <p class="nome">Steve</p>
+            </div>
+
+            <div class="personagem">
+              <img src="Imagens/scorpion.jpg" alt="Scorpion(mk)" draggable="true" class="draggable">
+              <p class="nome">Scorpion</p>
+            </div>
+
+            <div class="personagem">
+              <img src="Imagens/dio.png" alt="Dio(jojo)" draggable="true" class="draggable">
+              <p class="nome">Dio</p>
+            </div>
+
+            <div class="personagem">
+              <img src="Imagens/morte.webp" alt="Death(pib)" draggable="true" class="draggable">
+              <p class="nome">Death</p>
+            </div>
+
+            <div class="personagem">
+              <img src="Imagens/tai lung.png" alt="TaiLung(kfp)" draggable="true" class="draggable">
+              <p class="nome">Tai Lung</p>
+            </div>
+
+            <div class="personagem">
+              <img src="Imagens/megamind.jpg" alt="Megamind(megamind)" draggable="true" class="draggable">
+              <p class="nome">Megamind</p>
+            </div>
+
+            <div class="personagem">
+              <img src="Imagens/venom.jpg" alt="Venom(marvel)" draggable="true" class="draggable">
+              <p class="nome">Venom</p>
+            </div>
+
+            <div class="personagem">
+              <img src="Imagens/jonesy.jpg" alt="Jonesy(fortnite)" draggable="true" class="draggable">
+              <p class="nome">Jonesy</p>
+            </div>
+
+            <div class="personagem">
+              <img src="Imagens/diego.jpg" alt="Diego(ia)" draggable="true" class="draggable">
+              <p class="nome">Diego</p>
+            </div>
+
+            <div class="personagem">
+              <img src="Imagens/mark.jpg" alt="MarkGrayson(invincible)" draggable="true" class="draggable">
+              <p class="nome">Invencível</p>
+            </div>
+
+            <div class="personagem">
+              <img src="Imagens/URF.jpg" alt="FocaURF(lol)" draggable="true" class="draggable">
+              <p class="nome">Foca URF</p>
+            </div>
+
+            <div class="personagem">
+              <img src="Imagens/MasterChief.jpg" alt="MasterChief(halo)" draggable="true" class="draggable">
+              <p class="nome">Master Chief</p>
+            </div>
+
+            <div class="personagem">
+              <img src="Imagens/leon.jpg" alt="Leon(re)" draggable="true" class="draggable">
+              <p class="nome">Leon</p>
+            </div>
+
+            <div class="personagem">
+              <img src="Imagens/Nolan.jpg" alt="Omni-man(invincible)" draggable="true" class="draggable">
+              <p class="nome">Omni</p>
+            </div>
+
+            <div class="personagem">
+              <img src="Imagens/ironMan.jpg" alt="IronMan(marvel)" draggable="true" class="draggable">
+              <p class="nome">Iron Man</p>
+            </div>
+
+            <div class="personagem">
+              <img src="Imagens/pussInBoots.jpg" alt="PussInBoots(pib)" draggable="true" class="draggable">
+              <p class="nome">GatoDeBotas</p>
+            </div>
+
+            <div class="personagem">
+              <img src="Imagens/FredDurst.jpg" alt="FredDurst(lb)" draggable="true" class="draggable">
+              <p class="nome">Fred Durst</p>
+            </div>
+
+            <div class="personagem">
+              <img src="Imagens/ozzyOsbourne.jpg" alt="OzzyOsbourne(bs)" draggable="true" class="draggable">
+              <p class="nome">Ozzy</p>
+            </div>
+
+            <div class="personagem">
+              <img src="Imagens/OliverSykes.jpg" alt="OliverSykes(bmth)" draggable="true" class="draggable">
+              <p class="nome">Oliver Sykes</p>
+            </div>
+
+            <div class="personagem">
+              <img src="Imagens/Zagreus.jpg" alt="Zagreus(hades)" draggable="true" class="draggable">
+              <p class="nome">Zegreus</p>
+            </div>
+
+            <div  class="personagem">
+              <img src="Imagens/Sukuna.jpg" alt="Sukuna(jj)" draggable="true" class="draggable">
+              <p class="nome">Sukuna</p>
+            </div>
+
+            <div class="personagem">
+              <img src="Imagens/Shaggy.jpg" alt="Shaggy(sd)" draggable="true" class="draggable">
+              <p class="nome">Salsicha</p>
+            </div>
+
+            <div class="personagem">
+              <img src="Imagens/Arthur.webp" alt="Arthur(rdr)" draggable="true" class="draggable">
+              <p class="nome">Arthur</p>
+            </div>
+
+            <div>
+              <img src="Imagens/bilbo.jpg" alt="Bilbo(lotr)" draggable="true" class="draggable">
+              <p class="nome">Bilbo</p>
+            </div>
+
+          </div>
+        </div>
+      </div>
+      <div class="lado-direito">
+        <div class="favorite">
+          <h2>Favoritos 🤙</h2>
+          <div class="dropzone" id="favoritos">
+            <p class="mensagem">Arraste aqui seus favoritos!</p>
+          </div>
+          <div class="contador" id="contador-favoritos">0 personagens</div>
+        </div>
+
+        <div class="hated">
+          <h2>Odiados 👿</h2>
+          <div class="dropzone" id="odiados">
+            <p class="mensagem">Arraste aqui seus odiados!</p>
+          </div>
+          <div class="contador" id="contador-odiados">0 personagens</div>
         </div>
       </div>
     </div>
 
-    <div class="lado-direito">
-      <div class="container">
-        <h2>Favoritos 🤙</h2>
-        <div class="dropzone" id="favoritos">
-          <p class="mensagem">Arraste aqui seus favoritos!</p>
-        </div>
-        <div class="contador" id="contador-favoritos">0 personagens</div>
-      </div>
-
-      <div class="container">
-        <h2>Odiados 👿</h2>
-        <div class="dropzone" id="odiados">
-          <p class="mensagem">Arraste aqui seus odiados!</p>
-        </div>
-        <div class="contador" id="contador-odiados">0 personagens</div>
-      </div>
-    </div>
-  </div>
-
-  <script src="script.js"></script>
+    <script src="script.js"></script>
 </body>
+
 </html>
